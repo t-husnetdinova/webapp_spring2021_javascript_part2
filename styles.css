@@ -1,0 +1,64 @@
+header {
+    padding-top: 50px;
+    background-color: #989e8e;
+    padding-bottom: 20px;
+}
+body {
+    background-color: #DADED4 !important;
+    padding-top: 85px;
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #3C403D;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #3C403D;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h4 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3C403D;
+    text-align: center;
+    line-height: 1.5;
+}
+
+legend {
+    font-family: 'Times New Roman', serif;
+    color: #3C403D !important;
+    text-align: center;
+}
+
+label {
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    color: #3C403D;
+}
+
+footer {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3C403D;
+    line-height: 1.5; 
+}
+
+.id {
+    background-color: #fefbd8 !important;
+}
+
+.buttons {
+    text-align: center;
+}
