@@ -62,3 +62,7 @@ footer {
 .buttons {
     text-align: center;
 }
+
+.invisible {
+    display: none;
+}

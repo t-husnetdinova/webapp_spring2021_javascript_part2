@@ -27,28 +27,28 @@
                         <h4>Please provide basic information about yourself:</h4>
                         <!-- Part 1: User Information -->
                         <!-- First name -->
-                        <div class="form-group row col-lg-10">
+                        <div class="form-group row">
                             <div class="col-sm-2">
-                                <label for="fname" class="col-form-label">First name:</label><br>		
+                                <label for="fname" class="col-form-label">First name:</label>	
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" required><br>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" required>
                             </div>
                         </div>
                     
                         <!-- Last name -->
-                        <div class="form-group row col-lg-10">
+                        <div class="form-group row">
                             <div class="col-sm-2">
-                                <label for="lname" class="col-form-label">Last name:</label><br>
+                                <label for="lname" class="col-form-label">Last name:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" required><br>
+                                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" required>
                             </div>
                         </div>
                         
                         <!-- Gender -->
                         <!-- One group (same name), three elements (different ids)-->
-                        <fieldset class="form-group row col-lg-10">
+                        <fieldset class="form-group row">
                             <div class="form-group row col-lg-2">
                                 <legend class="col-sm-2 col-form-label">Gender: </legend>
                             </div>
@@ -63,55 +63,55 @@
                                 </div>
                                 <div class="form-check">
                                     <input type="radio" id="other" name="female" value="other" class="form-check-input">
-                                    <label for="other" class="form-check-label">Other</label><br>
+                                    <label for="other" class="form-check-label">Other</label>
                                 </div>
                             </div>
                         </fieldset>
 
                         <!-- Phone -->
-                        <div class="form-group row col-lg-10">
-                            <label for="phone" class="col-sm-2 col-form-label">Phone:</label><br>
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
                             <div class="col-sm-10">
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="555-555-5555" required><br>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="555-555-5555" required>
                             </div>
                         </div>
 
                         <!-- Email -->
-                        <div class="form-group row col-lg-10">
-                            <label for="email" class="col-sm-2 col-form-label">Email:</label><br>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email:</label>
                             <div class="col-sm-10">
-                                <input type="text" id="email" name="email" class="form-control" placeholder="example@email.com" required><br>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="example@email.com" required>
                             </div>
                         </div>
                         
                         <!-- Address -->
-                        <div class="form-group row col-lg-10">
-                            <label for="addressStreet" class="col-sm-2 col-form-label">Address:</label><br>
-                            <div class="col-sm-12 col-md-4">
-                                <input type="text" id="addressStreet" name="addressStreet" class="form-control" placeholder="Street address" required><br>
+                        <div class="form-group row">
+                            <label for="addressStreet" class="col-sm-2 col-form-label">Address:</label>
+                            <div class="col-sm-10 col-md-4">
+                                <input type="text" id="addressStreet" name="addressStreet" class="form-control" placeholder="Street address" required>
                             </div>
                             <div class="col">
-                                <input type="text" id="addressCity" name="addressCity" class="form-control" placeholder="City" required><br>
+                                <input type="text" id="addressCity" name="addressCity" class="form-control" placeholder="City" required>
                             </div>
                             <div class="col">
-                                <input type="text" id="addressState" name="addressState" class="form-control" placeholder="State" required><br>
+                                <input type="text" id="addressState" name="addressState" class="form-control" placeholder="State" required>
                             </div>
                             <div class="col">
-                                <input type="text" id="addressZip" name="addressZip" class="form-control" pattern="[0-9][5]" placeholder="Zip Code" required><br>
+                                <input type="text" id="addressZip" name="addressZip" class="form-control" pattern="[0-9][5]" placeholder="Zip Code" required>
                             </div>
                             <div class="col">
-                                <input type="text" id="addressCountry" name="addressCountry" class="form-control" placeholder="Country" required><br>
+                                <input type="text" id="addressCountry" name="addressCountry" class="form-control" placeholder="Country" required>
                             </div>
                         </div>
 
                         <!-- Date of birth -->
-                        <div class="form-group row col-lg-10">
-                            <label for="dob" class="col-sm-2 col-form-label">Date of birth:</label><br>
+                        <div class="form-group row">
+                            <label for="dob" class="col-sm-2 col-form-label">Date of birth:</label>
                             <div class="col-sm-10">
-                                <input type="date" id="dob" name="dob" required class="form-control"><br>
+                                <input type="date" id="dob" name="dob" required class="form-control">
                             </div>
                         </div>
-                    </fieldset><br>
+                    </fieldset>
 
                     <!-- Part 2: Symptom questionnaire -->
                     <fieldset class="border">
@@ -120,126 +120,126 @@
                         <h4>Please answer the following yes/no questions below:</h4>
 
                         <!-- Fever or chills-->
-                        <div class="form-group row col-lg-10">
-                            <label for="fever" class="col-sm-2 col-form-label">Fever or chills?</label><br>
-                            <select id="fever" name="fever">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="fever" class="col-sm-2 col-form-label">Fever or chills?</label>
+                            <div class="col-sm-2">
+                                <select id="fever" name="fever" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>     
-                            </select>
+                                </select>
+                            </div>     
                         </div>
                             
                         <!-- Cough -->
-                        <div class="form-group row col-lg-10">
-                            <label for="cough" class="col-sm-2 col-form-label">Cough?</label><br>
-                            <select id="cough" name="cough">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="cough" class="col-sm-2 col-form-label">Cough?</label>
+                            <div class="col-sm-2">
+                                <select id="cough" name="cough" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Shortness of breath or difficulty breathing -->
-                        <div class="form-group row col-lg-10">
-                            <label for="breath" class="col-sm-2 col-form-label">Shortness of breath or difficulty breathing?</label><br>
-                            <select id="breath" name="breath">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="breath" class="col-sm-2 col-form-label">Shortness of breath or difficulty breathing?</label>
+                            <div class="col-sm-2">
+                                <select id="breath" name="breath" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Fatigue -->
-                        <div class="form-group row col-lg-10">
-                            <label for="fatigue" class="col-sm-2 col-form-label">Fatigue?</label><br>
-                            <select id="fatigue" name="fatigue">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="fatigue" class="col-sm-2 col-form-label">Fatigue?</label>
+                            <div class="col-sm-2">
+                                <select id="fatigue" name="fatigue" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Muscle or body aches -->
-                        <div class="form-group row col-lg-10">
-                            <label for="aches" class="col-sm-2 col-form-label">Muscle or body aches?</label><br>
-                            <select id="aches" name="aches">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="aches" class="col-sm-2 col-form-label">Muscle or body aches?</label>
+                            <div class="col-sm-2">
+                                <select id="aches" name="aches" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Headaches-->
-                        <div class="form-group row col-lg-10">
-                            <label for="headache" class="col-sm-2 col-form-label">Headaches?</label><br>
-                            <select id="headache" name="headache">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="headache" class="col-sm-2 col-form-label">Headaches?</label>
+                            <div class="col-sm-2">
+                                <select id="headache" name="headache" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div> 
                         </div>
 
                         <!-- New loss of taste or smell-->
-                        <div class="form-group row col-lg-10">
-                            <label for="sense" class="col-sm-2 col-form-label">New loss of taste or smell?</label><br>
-                            <select id="sense" name="sense">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="sense" class="col-sm-2 col-form-label">New loss of taste or smell?</label>
+                            <div class="col-sm-2">
+                                <select id="sense" name="sense" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Sore throat -->
-                        <div class="form-group row col-lg-10">
-                            <label for="throat" class="col-sm-2 col-form-label">Sore throat?</label><br>
-                            <select id="throat" name="throat">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="throat" class="col-sm-2 col-form-label">Sore throat?</label>
+                            <div class="col-sm-2">
+                                <select id="throat" name="throat" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>  
-                            </select>
+                                </select>
+                            </div>  
                         </div>
                         
                         <!-- Congestion or runny nose -->
-                        <div class="form-group row col-lg-10">
-                            <label for="nose" class="col-sm-2 col-form-label">Congestion or runny nose?</label><br>
-                            <select id="nose" name="nose">
-                                <div class="col-sm-10">
+                        <div class="form-group row">
+                            <label for="nose" class="col-sm-2 col-form-label">Congestion or runny nose?</label>
+                            <div class="col-sm-2">
+                                <select id="nose" name="nose" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div> 
-                            </select>
+                                </select>
+                            </div> 
                         </div>
 
                         <!-- Nausea or vomiting -->
-                        <div class="form-group row col-lg-10">
-                            <label for="vom" class="col-sm-2 col-form-label">Nausea or vomiting?</label><br>
-                            <select id="vom" name="vom">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="vom" class="col-sm-2 col-form-label">Nausea or vomiting?</label>
+                            <div class="col-sm-2">
+                                <select id="vom" name="vom" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div> 
                         </div>
 
                         <!-- Diarrhea -->
-                        <div class="form-group row col-lg-10">
-                            <label for="stinky" class="col-sm-2 col-form-label">Diarrhea?</label><br>
-                            <select id="stinky" name="stinky">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="stinky" class="col-sm-2 col-form-label">Diarrhea?</label>
+                            <div class="col-sm-2">
+                                <select id="stinky" name="stinky" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
-                    </fieldset><br>
+                    </fieldset>
                         
                     <!-- Part 3: Other Questions -->
                     <fieldset class="border">
@@ -248,67 +248,67 @@
                         <h4>Please answer the following yes/no questions below:</h4>
 
                         <!-- Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed with COVID-19 in the last 14 days and were not wearing proper personal protective equipment? (yes/no) -->
-                        <div class="form-group row col-lg-10">
-                            <label for="contact" class="col-sm-2 col-form-label">Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed with COVID-19 in the last 14 days and were not wearing proper personal protective equipment?</label><br>
-                            <select id="contact" name="contact">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="contact" class="col-sm-2 col-form-label">Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed with COVID-19 in the last 14 days and were not wearing proper personal protective equipment?</label>
+                            <div class="col-sm-2">
+                                <select id="contact" name="contact" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- Have you had a diagnosis of COVID-19 in the last 10 days? (yes/no) -->
-                        <div class="form-group row col-lg-10">
-                            <label for="diag" class="col-sm-2 col-form-label">Have you had a diagnosis of COVID-19 in the last 10 days?</label><br>
-                            <select id="diag" name="diag">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="diag" class="col-sm-2 col-form-label">Have you had a diagnosis of COVID-19 in the last 10 days?</label>
+                            <div class="col-sm-2">
+                                <select id="diag" name="diag" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>   
                         </div>
 
                         <!-- Have you travelled to any country in the last 14 days? (yes/no) -->
-                        <div class="form-group row col-lg-10">
-                            <label for="travel" class="col-sm-2 col-form-label">Have you travelled to any country in the last 14 days?</label><br>
-                            <select id="travel" name="travel">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="travel" class="col-sm-2 col-form-label">Have you travelled to any country in the last 14 days?</label>
+                            <div class="col-sm-2">
+                                <select id="travel" name="travel" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>
+                            </div>
                         </div>
 
                         <!-- If yes, what countries? -->
                         <!-- Dynamics/logic will be added later with javascript-->
-                        <div class="form-group row col-lg-10">
+                        <div class="form-group row col-lg-10 invisible">
                             <div class="col-sm-2">
-                                <label for="travelYes" class="col-form-label">If yes, which countries? (separate by comma)</label><br>
+                                <label for="travelYes" class="col-form-label">If yes, which countries? (separate by comma)</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" id="travelYes" name="travelYes" class="form-control"><br>
+                                <input type="text" id="travelYes" name="travelYes" class="form-control">
                             </div>
                         </div>
                         
                         <!-- Have you socialized with a group of 6 or more people in the last 14 days? (yes/no) -->
-                        <div class="form-group row col-lg-10">
-                            <label for="social" class="col-sm-2 col-form-label">Have you socialized with a group of 6 or more people in the last 14 days?</label><br>
-                            <select id="social" name="social">
-                                <div class="col-sm-10">
+                        <div class="row form-group">
+                            <label for="social" class="col-sm-2 col-form-label">Have you socialized with a group of 6 or more people in the last 14 days?</label>
+                            <div class="col-sm-2">
+                                <select id="social" name="social" class="form-control">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
-                                </div>
-                            </select>
+                                </select>   
+                            </div>
                         </div>
 
                         <!-- Current temperature -->
-                        <div class="form-group row col-lg-10">
+                        <div class="row form-group">
                             <div class="col-sm-2">
-                                <label for="temp" class="col-form-label" >What is your current temperature in Fahrenheit?</label><br>
+                                <label for="temp" class="col-form-label" >What is your current temperature in Fahrenheit?</label>
                             </div>
-                            <div class="col-sm-10">
-                                <input type="text" id="temp" name="temp" pattern="[0-9]" class="form-control"><br>
+                            <div class="col-sm-2">
+                                <input type="text" id="temp" name="temp" pattern="[0-9]" class="form-control">
                             </div>
                         </div>
                     </fieldset>
