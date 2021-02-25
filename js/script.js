@@ -49,5 +49,27 @@ function validateForm() {
             dob.classList.remove("hasError");
         }
     }
+    
+    // check 2: countries
+    var travel = document.querySelector("#travel");
+    var divCountryError = document.querySelector("#divCountryError");
+    
+    if(travel.value == "Yes") {
+        var travelYes = document.querySelector("#travelYes");
+        if(travelYes.value == "") {
+            // error
+            divCountryError.classList.remove("invisible");
+            divCountryError.innerHTML = "Please list countries you've visited!";
+            travelYes.classList.add("hasError");
+            formIsValid = false;
+        }
+        else {
+            // no error, make it nice again
+            divCountryError.classList.add("invisible");
+            divCountryError.innerHTML = "";
+            travelYes.classList.remove("hasError");
+            formIsValid = true;
+        }
+    }
     return formIsValid;
 }
