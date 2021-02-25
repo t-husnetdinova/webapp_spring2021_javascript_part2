@@ -1,4 +1,4 @@
-# # CSCI4800 Classwork on Javascript Part 2
+# CSCI4800 Classwork on Javascript Part 2
 
 Name: Tammy Husnetdinova <br>
 Class: CSCI4800-E01 <br>
