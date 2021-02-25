@@ -71,5 +71,24 @@ function validateForm() {
             formIsValid = true;
         }
     }
+
+    // check 3: input validation
+    var elements = document.getElementsByTagName("input");
+    var invalidChars = ['<', '>', '!', '#', '$', '%', '^', '&', '*', '(', ')', '+', '=', '?'];
+    
+    for(let i = 0; i < elements.length; i++) {
+        for(let j = 0; j < invalidChars.length; j++) {
+            if(elements[i].value.indexOf(invalidChars[j]) != -1) {
+                elements[i].classList.add("hasError");
+                formIsValid = false;
+            }
+            else {
+                elements[i].classList.remove("hasError");
+                formIsValid = true;
+            }
+        }
+        
+    }
+
     return formIsValid;
 }
