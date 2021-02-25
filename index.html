@@ -21,7 +21,7 @@
                 <!-- Define a form -->
                 <!-- form will need an action tag eventually, when we connect a backend to store answers -->
                 <!-- Fun observation: defining a form allows for saved autofill values-->
-                <form>
+                <form onsubmit="return validateForm()" id="mainForm" novalidate>
                     <fieldset class="border">
                         <legend class="w-auto">Part 1: User Information</legend>
                         <h4>Please provide basic information about yourself:</h4>
@@ -109,6 +109,7 @@
                             <label for="dob" class="col-sm-2 col-form-label">Date of birth:</label>
                             <div class="col-sm-8">
                                 <input type="date" id="dob" name="dob" required class="form-control">
+                                <div id="divDobError" class="invisible errorMessage"></div>
                             </div>
                         </div>
                     </fieldset>

@@ -8,8 +8,46 @@ function updateCountryView() {
     if(travel.value == "Yes") {
         divCountry.classList.remove("invisible");
     }
+    // no error, make it nice again
     // if they change their mind
     else {
         divCountry.classList.add("invisible");
     }
+}
+
+// function to validate form
+function validateForm() {
+    // check 1: date of birth
+    var dob = document.querySelector("#dob");
+    var divDobError = document.querySelector("#divDobError");
+    var formIsValid = true;
+
+    // input is empty
+    if(dob.value == "") {
+        // error
+        divDobError.classList.remove("invisible");
+        divDobError.innerHTML = "The date of birth cannot be empty!"
+        dob.classList.add("hasError");
+        formIsValid = false;
+    }
+    else {
+        var dobDate = new Date(dob.value);
+        // if we don't pass anything in, becomes today's date
+        var todayDate = new Date();
+
+        if(dobDate >= todayDate) {
+            // error
+            divDobError.classList.remove("invisible");
+            divDobError.innerHTML = "The date of birth cannot be after today's date!"
+            dob.classList.add("hasError");
+            formIsValid = false;
+        }
+        else {
+            // no error, make it nice again
+            divDobError.classList.add("invisible");
+            divDobError.innerHTML = ""
+            dob.classList.remove("hasError");
+        }
+    }
+    return formIsValid;
 }
