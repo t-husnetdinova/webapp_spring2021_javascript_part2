@@ -89,6 +89,5 @@ function validateForm() {
         }
         
     }
-
     return formIsValid;
 }
